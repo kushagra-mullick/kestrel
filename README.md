@@ -17,7 +17,7 @@ Responders can see where to go first within hours of a satellite pass, instead o
 
 ![3D terrain with flood zones](images/terrain_3d.png)
 
-**Hospitals, clinics and schools against the flood.** White dots are dry places. The ringed cross marks a place inside the flood zone.
+**Hospitals, clinics and schools against the flood.** White dots are dry places. The ringed cross marks a school inside the flood zone.
 
 ![Facilities vs flood](images/facilities_vs_flood.png)
 
