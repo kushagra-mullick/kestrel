@@ -1,0 +1,14 @@
+earthengine-api
+geemap
+rasterio
+osmnx
+geedim
+overturemaps
+geopandas
+shapely
+pyproj
+scipy
+numpy
+pandas
+matplotlib
+seaborn
