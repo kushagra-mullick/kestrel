@@ -1,7 +1,8 @@
 # UAE Flood Response: Satellite-Based Flood Mapping and First-Responder Planning
 
 **WSW 2026 Hackathon, BPDC Supernova | Data/software prototype**
-**Team:** <Kestrel>
+**Team:** Kestrel
+
 **Members:**
 1. Veda Pramod Khedekar
 2. Kushagra Mullick
