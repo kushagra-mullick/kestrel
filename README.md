@@ -1,8 +1,14 @@
 # UAE Flood Response: Satellite-Based Flood Mapping and First-Responder Planning
 
 **WSW 2026 Hackathon, BPDC Supernova | Data/software prototype**
-**Team:** <TEAM NAME HERE>
-
+**Team:** <Kestrel>
+**Members:**
+1. Veda Pramod Khedekar
+2. Kushagra Mullick
+3. Sameesh Hegde
+4. Harshit Srivastava
+5. Vraj Hemang Pandit
+ 
 ## Problem
 In April 2024, record rainfall flooded Dubai, Sharjah and Ajman. Responders (SDRF/NDRF-style teams) needed to know **where the water was, how deep it was, which hospitals and schools were affected, and where to send teams first**. Ground reports were slow and incomplete. Satellites can see the whole region at once, even through clouds.
 
