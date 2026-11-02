@@ -3,13 +3,22 @@
 **WSW 2026 Hackathon, BPDC Supernova | Data/software prototype**
 **Team:** Kestrel
 
-**Members:**
-1. Veda Pramod Khedekar
-2. Kushagra Mullick
-3. Sameesh Hegde
-4. Harshit Srivastava
-5. Vraj Hemang Pandit
- 
+## Why it matters
+Responders can see where to go first within hours of a satellite pass, instead of waiting days for ground reports. The notebook turns raw radar and terrain data into a ranked list of sectors, the places at risk, and a suggested lead team.
+
+## Results at a glance
+**Flood zones with height contours.** Red, orange and yellow show deep, medium and shallow flooding. Purple shows terrain-based hotspots (low, flat ground).
+
+![Flood zones with height contours](images/flood_zones_contours.png)
+
+**Hospitals, clinics and schools against the flood.** White dots are dry places. The ringed cross marks a place inside the flood zone.
+
+![Facilities vs flood](images/facilities_vs_flood.png)
+
+**Sector priority.** The study area is split into an 8 x 8 grid, and each sector is scored for response priority.
+
+![Sector priority](images/sector_priority.png)
+
 ## Problem
 In April 2024, record rainfall flooded Dubai, Sharjah and Ajman. Responders (SDRF/NDRF-style teams) needed to know **where the water was, how deep it was, which hospitals and schools were affected, and where to send teams first**. Ground reports were slow and incomplete. Satellites can see the whole region at once, even through clouds.
 
@@ -54,4 +63,5 @@ Settings you can tune are marked `<-- CHANGE THIS` in the notebook (orbit, dates
 
 ## Files
 - `krestel.ipynb`: the full pipeline with outputs
+- `images/`: result figures used in this README
 - `requirements.txt`: Python libraries (Colab already has most of them)
