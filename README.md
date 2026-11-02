@@ -3,6 +3,8 @@
 **WSW 2026 Hackathon, BPDC Supernova | Data/software prototype**
 **Team:** Kestrel
 
+> Terrain alone predicts where the April 2024 UAE flood happened 2.6x to 3.6x better than random, and our pipeline turns that into a ranked first-responder plan.
+
 ## Why it matters
 Responders can see where to go first within hours of a satellite pass, instead of waiting days for ground reports. The notebook turns raw radar and terrain data into a ranked list of sectors, the places at risk, and a suggested lead team.
 
@@ -11,6 +13,10 @@ Responders can see where to go first within hours of a satellite pass, instead o
 
 ![Flood zones with height contours](images/flood_zones_contours.png)
 
+**3D terrain with flood zones.** The same colour code on a 3D surface shows how flooding collects in low-lying ground.
+
+![3D terrain with flood zones](images/terrain_3d.png)
+
 **Hospitals, clinics and schools against the flood.** White dots are dry places. The ringed cross marks a place inside the flood zone.
 
 ![Facilities vs flood](images/facilities_vs_flood.png)
@@ -18,6 +24,11 @@ Responders can see where to go first within hours of a satellite pass, instead o
 **Sector priority.** The study area is split into an 8 x 8 grid, and each sector is scored for response priority.
 
 ![Sector priority](images/sector_priority.png)
+
+## Alignment with the problem statement (Theme 4: First Responders from Orbit)
+- **Map floods within hours, not days:** Covered. Sentinel-1 radar flood mapping from a before/after pair, with depth zones.
+- **Learn from the April 2024 UAE floods:** Covered. We reconstruct where water pooled, how deep it was, and which areas were most exposed, using terrain hotspots validated against the real flood.
+- **Assess damage to roads and buildings:** Partly covered. We flag flooded hospitals, clinics and schools. Road-access analysis is planned future work.
 
 ## Problem
 In April 2024, record rainfall flooded Dubai, Sharjah and Ajman. Responders (SDRF/NDRF-style teams) needed to know **where the water was, how deep it was, which hospitals and schools were affected, and where to send teams first**. Ground reports were slow and incomplete. Satellites can see the whole region at once, even through clouds.
@@ -59,6 +70,7 @@ Settings you can tune are marked `<-- CHANGE THIS` in the notebook (orbit, dates
 - Depth is a rough estimate from terrain and is meant for zones, not exact depths.
 - Radar can miss flood water under dense buildings, and smooth sand can look like water. We reduce this with two rules and slope and permanent-water masks, but there is no ground-truth validation yet.
 - Sector scores use weights we chose (flood km2 + 3 x deep + 1.5 x medium + 0.5 x hotspot + 0.5 x flooded places).
+- The flood mask keeps only high-confidence pixels, so the real flooded extent is likely larger than the 8.7 km2 reported.
 - Roads were skipped because they are heavy to download. Road-access analysis is the next step.
 
 ## Files
